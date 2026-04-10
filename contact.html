@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Mila’s Eden</title>
+  <meta name="description" content="Contact Mila’s Eden in Golf View, Mafikeng — enquiry form, phone, email, and social links." />
+  <meta name="theme-color" content="#1f2a22" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared Navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Mila’s Eden home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Golf View, Mafikeng</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="rooms.html">Rooms & Apartment</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="location.html">Location</a></li>
+          <li><a class="nav-link" href="booking.html">Booking</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-media" aria-hidden="true">
+            <img
+              class="hero-img"
+              alt="Road leading towards Mila’s Eden"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (2).jpeg"
+            />
+            <div class="hero-scrim"></div>
+          </div>
+
+          <div class="container hero-content">
+            <div class="breadcrumbs reveal">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span>Contact</span>
+            </div>
+            <h1 class="display reveal">Contact</h1>
+            <p class="lead reveal">We’d love to help you plan your stay at Mila’s Eden.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <div class="form-card">
+            <h2 class="h2">Send us a message</h2>
+            <p class="muted">Share your question or request. We usually respond within one business day.</p>
+            <div class="divider"></div>
+            <form id="contactForm" class="form" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label class="label" for="contactName">Name</label>
+                  <input class="input" type="text" id="contactName" name="name" required placeholder="Your name" />
+                </div>
+                <div class="field">
+                  <label class="label" for="contactEmail">Email</label>
+                  <input class="input" type="email" id="contactEmail" name="email" required placeholder="you@example.com" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="contactSubject">Subject</label>
+                <input class="input" type="text" id="contactSubject" name="subject" required placeholder="Booking enquiry, question, special request…" />
+              </div>
+
+              <div class="field">
+                <label class="label" for="contactMessage">Message</label>
+                <textarea class="textarea" id="contactMessage" name="message" required placeholder="How can we help?"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="hint">This form is a front-end placeholder. Connect it to your email or CRM later.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="form-card">
+            <h2 class="h2">Contact details</h2>
+            <p class="muted">
+              Replace the placeholder details below with your final contact information and social links.
+            </p>
+            <div class="divider"></div>
+            <h3 class="h3">Direct contacts</h3>
+            <ul class="list">
+              <li>Phone / WhatsApp: <a href="tel:+27639611243">+27 63 961 1243</a> / <a href="tel:+27615016118">+27 61 501 6118</a></li>
+              <li>Email: <a href="mailto:bookings@milaseden.co.za">bookings@milaseden.co.za</a></li>
+            </ul>
+
+            <div class="divider"></div>
+            <h3 class="h3">Address</h3>
+            <p class="muted">
+              Golf View, Mafikeng<br />
+              North West, South Africa
+            </p>
+
+            <div class="divider"></div>
+            <h3 class="h3">Social</h3>
+            <ul class="list">
+              <li><span class="muted">Instagram:</span> <a href="#" aria-label="Instagram profile placeholder">@milaseden (add real link)</a></li>
+              <li><span class="muted">Facebook:</span> <a href="#" aria-label="Facebook page placeholder">Mila’s Eden (add real link)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Luxury Lodge • Golf View, Mafikeng</span>
+          </span>
+        </div>
+        <p class="muted">
+          Premium calm. Nature-led design. Thoughtful hospitality.
+          This template uses placeholders — replace images and details with your final content.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html">Rooms & Apartment</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Bookings</h3>
+        <ul class="footer-links">
+          <li><a href="booking.html">Book now</a></li>
+          <li><a href="booking.html#policies">Policies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+27639611243">+27 63 961 1243</a></li>
+          <li><a href="tel:+27615016118">+27 61 501 6118</a></li>
+          <li><a href="mailto:bookings@milaseden.co.za">bookings@milaseden.co.za</a></li>
+          <li><span class="muted">Golf View, Mafikeng, South Africa</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">&copy; <span id="year"></span> Mila’s Eden. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

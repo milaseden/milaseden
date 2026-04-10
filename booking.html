@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Mila’s Eden</title>
+  <meta name="description" content="Book your stay at Mila’s Eden in Golf View, Mafikeng. Booking form, availability calendar, and payment guidance." />
+  <meta name="theme-color" content="#1f2a22" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared Navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Mila’s Eden home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Golf View, Mafikeng</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="rooms.html">Rooms & Apartment</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="location.html">Location</a></li>
+          <li><a class="nav-link" href="booking.html">Booking</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-media" aria-hidden="true">
+            <img
+              class="hero-img"
+              alt="Inviting bedroom ready for a stay"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58.jpeg"
+            />
+            <div class="hero-scrim"></div>
+          </div>
+
+          <div class="container hero-content">
+            <div class="breadcrumbs reveal">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span>Booking</span>
+            </div>
+            <h1 class="display reveal">Book your stay</h1>
+            <p class="lead reveal">Share your ideal dates and we’ll confirm availability and final pricing for your Mila’s Eden escape.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2">
+        <div class="reveal">
+          <div class="form-card">
+            <h2 class="h2">Booking request</h2>
+            <p class="muted">
+              Fill in the form below. You’ll receive a confirmation email or message once we’ve checked availability.
+            </p>
+            <div class="divider"></div>
+
+            <form id="bookingForm" class="form" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label class="label" for="checkIn">Check‑in</label>
+                  <input class="input" type="date" id="checkIn" name="checkIn" required />
+                </div>
+                <div class="field">
+                  <label class="label" for="checkOut">Check‑out</label>
+                  <input class="input" type="date" id="checkOut" name="checkOut" required />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label class="label" for="stayType">Room / Apartment</label>
+                  <select class="select" id="stayType" name="stayType" required>
+                    <option value="">Choose an option</option>
+                    <option value="Room">Room</option>
+                    <option value="Apartment">Apartment</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label class="label" for="guests">Number of guests</label>
+                  <input class="input" type="number" id="guests" name="guests" min="1" max="4" value="2" required />
+                </div>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label class="label" for="name">Full name</label>
+                  <input class="input" type="text" id="name" name="name" required placeholder="Your name" />
+                </div>
+                <div class="field">
+                  <label class="label" for="email">Email</label>
+                  <input class="input" type="email" id="email" name="email" required placeholder="you@example.com" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label" for="phone">Phone / WhatsApp</label>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="+27 ..." />
+              </div>
+
+              <div class="field">
+                <label class="label" for="notes">Special requests (optional)</label>
+                <textarea class="textarea" id="notes" name="notes" placeholder="Dietary preferences, celebration, arrival time…"></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">Send booking request</button>
+                <p class="hint">No payment is taken online. You’ll receive payment details once your dates are confirmed.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="form-card">
+            <h2 class="h2">Availability calendar</h2>
+            <p class="muted">
+              This is a simple visual guide. Final availability will always be confirmed by the host.
+            </p>
+            <div class="divider"></div>
+            <div id="availabilityCalendar"></div>
+          </div>
+
+          <section id="policies" style="margin-top:24px;">
+            <div class="form-card">
+              <h3 class="h3">Booking &amp; payment notes</h3>
+              <ul class="list">
+                <li>Check‑in from 2:00 PM and check‑out at 10:00 AM</li>
+                <li>Deposit requirements and accepted payment methods</li>
+                <li>Cancellation window and any applicable fees</li>
+              </ul>
+              <p class="muted" style="margin-top:10px;">
+                Replace this placeholder with your final booking, deposit, and cancellation policies.
+              </p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Luxury Lodge • Golf View, Mafikeng</span>
+          </span>
+        </div>
+        <p class="muted">
+          Premium calm. Nature-led design. Thoughtful hospitality.
+          This template uses placeholders — replace images and details with your final content.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html">Rooms & Apartment</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Bookings</h3>
+        <ul class="footer-links">
+          <li><a href="booking.html">Book now</a></li>
+          <li><a href="booking.html#policies">Policies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+27639611243">+27 63 961 1243</a></li>
+          <li><a href="tel:+27615016118">+27 61 501 6118</a></li>
+          <li><a href="mailto:bookings@milaseden.co.za">bookings@milaseden.co.za</a></li>
+          <li><span class="muted">Golf View, Mafikeng, South Africa</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">&copy; <span id="year"></span> Mila’s Eden. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

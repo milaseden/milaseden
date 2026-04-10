@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | Mila’s Eden</title>
+  <meta name="description" content="Browse the Mila’s Eden gallery — rooms, apartment, lodge grounds, and surroundings in Golf View, Mafikeng." />
+  <meta name="theme-color" content="#1f2a22" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Shared Navigation -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html" aria-label="Mila’s Eden home">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Golf View, Mafikeng</span>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle-lines" aria-hidden="true"></span>
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="rooms.html">Rooms & Apartment</a></li>
+          <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li><a class="nav-link" href="location.html">Location</a></li>
+          <li><a class="nav-link" href="booking.html">Booking</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-cta"><a class="btn btn-primary" href="booking.html">Book Now</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-media" aria-hidden="true">
+            <img
+              class="hero-img"
+              alt="Collage of Mila’s Eden surroundings"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12 (1).jpeg"
+            />
+            <div class="hero-scrim"></div>
+          </div>
+
+          <div class="container hero-content">
+            <div class="breadcrumbs reveal">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span>Gallery</span>
+            </div>
+            <h1 class="display reveal">Gallery</h1>
+            <p class="lead reveal">A visual glimpse into Mila’s Eden — rooms, apartment, lodge grounds, and the surroundings of Golf View.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="h2">Curated views of calm</h2>
+          <p class="muted">Use the filters below to explore specific areas. All images use placeholders — swap these with your real photography.</p>
+        </div>
+
+        <div class="filter-bar reveal" data-gallery-filters>
+          <button class="chip is-active" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="rooms">Rooms</button>
+          <button class="chip" type="button" data-filter="apartment">Apartment</button>
+          <button class="chip" type="button" data-filter="lodge">Lodge Grounds</button>
+          <button class="chip" type="button" data-filter="surroundings">Surroundings</button>
+        </div>
+
+        <div class="gallery-grid reveal" data-gallery-grid>
+          <!-- Rooms -->
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.36.jpeg"
+            data-caption="Room — main view"
+          >
+            <img
+              alt="Room gallery image"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.36.jpeg"
+            />
+            <div class="cap">Room — main view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.36 (1).jpeg"
+            data-caption="Room — alternate angle"
+          >
+            <img
+              alt="Room gallery image 2"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.36 (1).jpeg"
+            />
+            <div class="cap">Room — alternate angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37.jpeg"
+            data-caption="Room — details &amp; textures"
+          >
+            <img
+              alt="Room gallery image 3"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37.jpeg"
+            />
+            <div class="cap">Room — details &amp; textures</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37 (1).jpeg"
+            data-caption="Room — bedside view"
+          >
+            <img
+              alt="Room gallery image 4"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37 (1).jpeg"
+            />
+            <div class="cap">Room — bedside view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37 (2).jpeg"
+            data-caption="Room — soft lighting"
+          >
+            <img
+              alt="Room gallery image 5"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.37 (2).jpeg"
+            />
+            <div class="cap">Room — soft lighting</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.38.jpeg"
+            data-caption="Room — bathroom detail"
+          >
+            <img
+              alt="Room gallery image 6"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.38.jpeg"
+            />
+            <div class="cap">Room — bathroom detail</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.38 (1).jpeg"
+            data-caption="Room — additional bathroom angle"
+          >
+            <img
+              alt="Room gallery image 7"
+              src="Images/Room1/WhatsApp Image 2026-02-26 at 15.08.38 (1).jpeg"
+            />
+            <div class="cap">Room — additional bathroom angle</div>
+          </button>
+
+          <!-- Rooms -->
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.57.jpeg"
+            data-caption="Room — main view"
+          >
+            <img
+              alt="Room gallery image"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.57.jpeg"
+            />
+            <div class="cap">Room — main view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58.jpeg"
+            data-caption="Room — alternate bedroom angle"
+          >
+            <img
+              alt="Room gallery image 2"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58.jpeg"
+            />
+            <div class="cap">Room — alternate bedroom angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (1).jpeg"
+            data-caption="Room — desk &amp; workspace"
+          >
+            <img
+              alt="Room gallery image 3"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (1).jpeg"
+            />
+            <div class="cap">Room — desk &amp; workspace</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (2).jpeg"
+            data-caption="Room — seating detail"
+          >
+            <img
+              alt="Room gallery image 4"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (2).jpeg"
+            />
+            <div class="cap">Room — seating detail</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (3).jpeg"
+            data-caption="Room — room styling"
+          >
+            <img
+              alt="Room gallery image 5"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.58 (3).jpeg"
+            />
+            <div class="cap">Room — room styling</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59.jpeg"
+            data-caption="Room — bathroom detail"
+          >
+            <img
+              alt="Room gallery image 6"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59.jpeg"
+            />
+            <div class="cap">Room — bathroom detail</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59 (1).jpeg"
+            data-caption="Room — vanity &amp; mirror"
+          >
+            <img
+              alt="Room gallery image 7"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59 (1).jpeg"
+            />
+            <div class="cap">Room — vanity &amp; mirror</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="rooms"
+            data-lightbox="true"
+            data-src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59 (2).jpeg"
+            data-caption="Room — additional bathroom angle"
+          >
+            <img
+              alt="Room gallery image 8"
+              src="Images/Room2/WhatsApp Image 2026-02-28 at 10.28.59 (2).jpeg"
+            />
+            <div class="cap">Room — additional bathroom angle</div>
+          </button>
+
+          <!-- Apartment – Eden Apartment -->
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11.jpeg"
+            data-caption="Apartment — living area"
+          >
+            <img
+              alt="Apartment gallery image"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11.jpeg"
+            />
+            <div class="cap">Apartment — living area</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11 (1).jpeg"
+            data-caption="Apartment — alternate lounge angle"
+          >
+            <img
+              alt="Apartment gallery image 2"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11 (1).jpeg"
+            />
+            <div class="cap">Apartment — alternate lounge angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11 (2).jpeg"
+            data-caption="Apartment — seating &amp; styling"
+          >
+            <img
+              alt="Apartment gallery image 3"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.11 (2).jpeg"
+            />
+            <div class="cap">Apartment — seating &amp; styling</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.12.jpeg"
+            data-caption="Apartment — bedroom"
+          >
+            <img
+              alt="Apartment gallery image 4"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.12.jpeg"
+            />
+            <div class="cap">Apartment — bedroom</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.12 (1).jpeg"
+            data-caption="Apartment — bedroom detail"
+          >
+            <img
+              alt="Apartment gallery image 5"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.12 (1).jpeg"
+            />
+            <div class="cap">Apartment — bedroom detail</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13.jpeg"
+            data-caption="Apartment — kitchenette"
+          >
+            <img
+              alt="Apartment gallery image 6"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13.jpeg"
+            />
+            <div class="cap">Apartment — kitchenette</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13 (1).jpeg"
+            data-caption="Apartment — kitchen detail"
+          >
+            <img
+              alt="Apartment gallery image 7"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13 (1).jpeg"
+            />
+            <div class="cap">Apartment — kitchen detail</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13 (2).jpeg"
+            data-caption="Apartment — decor &amp; styling"
+          >
+            <img
+              alt="Apartment gallery image 8"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.13 (2).jpeg"
+            />
+            <div class="cap">Apartment — decor &amp; styling</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.14.jpeg"
+            data-caption="Apartment — bathroom"
+          >
+            <img
+              alt="Apartment gallery image 9"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.14.jpeg"
+            />
+            <div class="cap">Apartment — bathroom</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="apartment"
+            data-lightbox="true"
+            data-src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.14 (1).jpeg"
+            data-caption="Apartment — additional bathroom angle"
+          >
+            <img
+              alt="Apartment gallery image 10"
+              src="Images/Apartment/WhatsApp Image 2026-02-26 at 15.07.14 (1).jpeg"
+            />
+            <div class="cap">Apartment — additional bathroom angle</div>
+          </button>
+
+          <!-- Lodge grounds / Amenities -->
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="lodge"
+            data-lightbox="true"
+            data-src="Images/Amenities/WhatsApp Image 2026-02-26 at 15.10.10 (1).jpeg"
+            data-caption="Amenities — shared spaces"
+          >
+            <img
+              alt="Lodge amenities image 1"
+              src="Images/Amenities/WhatsApp Image 2026-02-26 at 15.10.10 (1).jpeg"
+            />
+            <div class="cap">Amenities — shared lodge spaces</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="lodge"
+            data-lightbox="true"
+            data-src="Images/Amenities/WhatsApp Image 2026-02-26 at 15.10.10 (2).jpeg"
+            data-caption="Amenities — additional lounge or feature"
+          >
+            <img
+              alt="Lodge amenities image 2"
+              src="Images/Amenities/WhatsApp Image 2026-02-26 at 15.10.10 (2).jpeg"
+            />
+            <div class="cap">Amenities — additional lounge or feature</div>
+          </button>
+
+          <!-- Surroundings -->
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.10.jpeg"
+            data-caption="Surroundings — lodge exterior &amp; greenery"
+          >
+            <img
+              alt="Surroundings image 1"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.10.jpeg"
+            />
+            <div class="cap">Surroundings — lodge exterior &amp; greenery</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.10 (1).jpeg"
+            data-caption="Surroundings — path or outdoor spaces"
+          >
+            <img
+              alt="Surroundings image 2"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.10 (1).jpeg"
+            />
+            <div class="cap">Surroundings — path or outdoor spaces</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11.jpeg"
+            data-caption="Surroundings — neighbourhood view"
+          >
+            <img
+              alt="Surroundings image 3"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11.jpeg"
+            />
+            <div class="cap">Surroundings — neighbourhood view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11 (1).jpeg"
+            data-caption="Surroundings — greenery &amp; trees"
+          >
+            <img
+              alt="Surroundings image 4"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11 (1).jpeg"
+            />
+            <div class="cap">Surroundings — greenery &amp; trees</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11 (2).jpeg"
+            data-caption="Surroundings — additional outdoor angle"
+          >
+            <img
+              alt="Surroundings image 5"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.11 (2).jpeg"
+            />
+            <div class="cap">Surroundings — additional outdoor angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12.jpeg"
+            data-caption="Surroundings — street or gateway"
+          >
+            <img
+              alt="Surroundings image 6"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12.jpeg"
+            />
+            <div class="cap">Surroundings — street or gateway</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12 (1).jpeg"
+            data-caption="Surroundings — landscape view"
+          >
+            <img
+              alt="Surroundings image 7"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12 (1).jpeg"
+            />
+            <div class="cap">Surroundings — landscape view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12 (2).jpeg"
+            data-caption="Surroundings — alternate landscape angle"
+          >
+            <img
+              alt="Surroundings image 8"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.12 (2).jpeg"
+            />
+            <div class="cap">Surroundings — alternate landscape angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13.jpeg"
+            data-caption="Surroundings — wider neighbourhood view"
+          >
+            <img
+              alt="Surroundings image 9"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13.jpeg"
+            />
+            <div class="cap">Surroundings — wider neighbourhood view</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (1).jpeg"
+            data-caption="Surroundings — street &amp; trees"
+          >
+            <img
+              alt="Surroundings image 10"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (1).jpeg"
+            />
+            <div class="cap">Surroundings — street &amp; trees</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (2).jpeg"
+            data-caption="Surroundings — entrance perspective"
+          >
+            <img
+              alt="Surroundings image 11"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (2).jpeg"
+            />
+            <div class="cap">Surroundings — entrance perspective</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (3).jpeg"
+            data-caption="Surroundings — additional entrance angle"
+          >
+            <img
+              alt="Surroundings image 12"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.13 (3).jpeg"
+            />
+            <div class="cap">Surroundings — additional entrance angle</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.14.jpeg"
+            data-caption="Surroundings — road &amp; sky"
+          >
+            <img
+              alt="Surroundings image 13"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.14.jpeg"
+            />
+            <div class="cap">Surroundings — road &amp; sky</div>
+          </button>
+
+          <button
+            class="gallery-item"
+            type="button"
+            data-category="surroundings"
+            data-lightbox="true"
+            data-src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.14 (1).jpeg"
+            data-caption="Surroundings — extended road view"
+          >
+            <img
+              alt="Surroundings image 14"
+              src="Images/Surroundings/WhatsApp Image 2026-02-26 at 15.10.14 (1).jpeg"
+            />
+            <div class="cap">Surroundings — extended road view</div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand brand-footer">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">
+            <span class="brand-name">Mila’s Eden</span>
+            <span class="brand-sub">Luxury Lodge • Golf View, Mafikeng</span>
+          </span>
+        </div>
+        <p class="muted">
+          Premium calm. Nature-led design. Thoughtful hospitality.
+          This template uses placeholders — replace images and details with your final content.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="rooms.html">Rooms & Apartment</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="location.html">Location</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Bookings</h3>
+        <ul class="footer-links">
+          <li><a href="booking.html">Book now</a></li>
+          <li><a href="booking.html#policies">Policies</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+27639611243">+27 63 961 1243</a></li>
+          <li><a href="tel:+27615016118">+27 61 501 6118</a></li>
+          <li><a href="mailto:bookings@milaseden.co.za">bookings@milaseden.co.za</a></li>
+          <li><span class="muted">Golf View, Mafikeng, South Africa</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted">&copy; <span id="year"></span> Mila’s Eden. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
