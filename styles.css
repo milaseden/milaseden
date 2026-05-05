@@ -336,6 +336,9 @@ body{
   text-align: center;
   padding: 84px 0;
 }
+.hero-home .display{
+  color: #fff;
+}
 .hero-actions{ display: flex; justify-content: center; gap: 12px; margin-top: 22px; flex-wrap: wrap; }
 
 /* Media cards */
